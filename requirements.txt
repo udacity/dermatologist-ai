@@ -1,0 +1,8 @@
+Keras==2.0.9
+matplotlib==2.0.0
+numpy==1.13.3
+pandas==0.19.2
+scikit-learn==0.18.1
+tensorflow==1.4.0
+pathlib2==2.2.1
+tqdm==4.11.2
