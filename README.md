@@ -19,31 +19,22 @@ The data and objective are pulled from the [2017 ISIC Challenge on Skin Lesion A
 
 ## Getting Started
 
-Clone the repository and create a `data/` folder to hold the dataset of skin images.
+1. Clone the [repository](https://github.com/udacity/dermatologist-ai) and create a `data/` folder to hold the dataset of skin images.  
 ```text
 git clone https://github.com/udacity/dermatologist-ai.git
 mkdir data; cd data
 ```
-
-Download and unzip the [training data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/train.zip) (5.3 GB):
+2. Create folders to hold the training, validation, and test images.
 ```text
-wget https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/train.zip 
-jar -xf train.zip; rm train.zip
+mkdir train; mkdir valid; mkdir test
 ```
+3. Download and unzip the [training data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/train.zip) (5.3 GB).
 
-Download and unzip the [validation data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/valid.zip) (824.5 MB):
-```text
-wget https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/valid.zip
-jar -xf valid.zip; rm valid.zip
-```
+4. Download and unzip the [validation data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/valid.zip) (824.5 MB).
 
-Download and unzip the [test data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/test.zip) (5.1 GB):
-```text
-wget https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/test.zip 
-jar -xf test.zip; rm test.zip
-```
+5. Download and unzip the [test data](https://s3-us-west-1.amazonaws.com/udacity-dlnfd/datasets/skin-cancer/test.zip) (5.1 GB).
 
-Make sure that the folders with the training, validation, and test images are placed in the `data/` folder, at `data/train/`, `data/valid/`, and `data/test/`, respectively.  Each folder contains three sub-folders (`melanoma/`, `nevus/`, `seborrheic_keratosis/`), each containing representative images from one of the three image classes.
+6. Place the training, validation, and test images in the `data/` folder, at `data/train/`, `data/valid/`, and `data/test/`, respectively.  Each folder should contain three sub-folders (`melanoma/`, `nevus/`, `seborrheic_keratosis/`), each containing representative images from one of the three image classes.
 
 You are free to use any coding environment of your choice to solve this mini project!  In order to rank your results, you need only use a pipeline that culminates in a CSV file containing your test predictions.
 
