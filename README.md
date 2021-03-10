@@ -94,7 +94,7 @@ Your file should have exactly 3 columns:
 
 Once the CSV file is obtained, you will use the `get_results.py` file to score your submission.  To set up the environment to run this file, you need to create (and activate) an environment with Python 3.5 and a few pip-installable packages:
 ```text
-conda create --name derm-ai python=3.5
+conda create --name derm-ai python=3.6
 source activate derm-ai
 pip install -r requirements.txt
 ```
